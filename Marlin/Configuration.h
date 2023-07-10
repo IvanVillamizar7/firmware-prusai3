@@ -663,13 +663,13 @@
   #if ENABLED(PID_PARAMS_PER_HOTEND)
     // Specify up to one value per hotend here, according to your setup.
     // If there are fewer values, the last one applies to the remaining hotends.
-     #define DEFAULT_Kp_LIST {  33.00,  33.00 }
-    #define DEFAULT_Ki_LIST {   3.50,   3.50 }
-    #define DEFAULT_Kd_LIST {   77.72, 77.72 }
+     #define DEFAULT_Kp_LIST {  22.64,  22.64 }
+    #define DEFAULT_Ki_LIST {   2.09,   2.09 }
+    #define DEFAULT_Kd_LIST {   61.21, 61.21 }
   #else
-    #define DEFAULT_Kp  33.00
-    #define DEFAULT_Ki   3.50
-    #define DEFAULT_Kd  77.72
+    #define DEFAULT_Kp  22.64
+    #define DEFAULT_Ki  2.09
+    #define DEFAULT_Kd  61.21
   #endif
 #endif
 
@@ -752,9 +752,9 @@
 
   // 120V 250W silicone heater into 4mm borosilicate (MendelMax 1.5+)
   // from FOPDT model - kp=.39 Tp=405 Tdead=66, Tc set to 79.2, aggressive factor of .15 (vs .1, 1, 10)
-  #define DEFAULT_bedKp 451.32
-  #define DEFAULT_bedKi 83.48
-  #define DEFAULT_bedKd 1626.70
+  #define DEFAULT_bedKp 146.87
+  #define DEFAULT_bedKi 26.37
+  #define DEFAULT_bedKd 545.43
 
   // FIND YOUR OWN: "M303 E-1 C8 S90" to run autotune on the bed at 90 degreesC for 8 cycles.
 #endif // PIDTEMPBED
